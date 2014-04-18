@@ -29,7 +29,7 @@ action :install do
 
     start_time = Time.now
 
-    if new_resource.patch.present?
+    if new_resource.patch
       patch = " #{new_resource.patch}"
       patch_flag = "--patch "
     end
